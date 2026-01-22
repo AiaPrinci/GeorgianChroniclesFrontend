@@ -5,8 +5,8 @@ import { useNavigate, Link } from 'react-router-dom';
 import Alert from '../../../alert';
 import x from '@/assets/svgs/x.svg';
 import AutoFontText from '../../../isGeorgian';
-import emptyHeart from '@/assets/svgs/emptyHeart.svg';
-import filledHeart from '@/assets/svgs/filledHeart.svg';
+import emptyHeart from '@/assets/svgs/emptyheart.svg';
+import filledHeart from '@/assets/svgs/filledheart.svg';
 import comment from '@/assets/svgs/comment.svg';
 import send from '@/assets/svgs/send.svg';
 import stevepfp from '@/assets/images/Steve.png'
