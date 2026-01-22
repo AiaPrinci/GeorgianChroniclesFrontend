@@ -1,0 +1,335 @@
+header {
+    width: 100%;
+    height: auto;
+    position: fixed;
+    z-index: 2;
+    /* padding-top: 10px; */
+    background-color: rgba(0, 0, 0, 0.081);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--border-color);
+}
+.header {
+    width: 100%;
+    max-width: 1260px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0);
+    /* border: 1px solid var(--border-color); */
+    padding: 5px 20px;
+    /* border-radius: 100px; */
+    /* box-shadow: 2px 2px 10px #00000056; */
+}
+.header_list_container {
+    display: flex;
+    gap: 20px;
+}
+.header_heading {
+    color: var(--heading);
+    font-size: 20px;
+    font-family: var(--MinecraftFont);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.header_logo {
+    width: 40px;
+    height: auto;
+}
+
+.header_list {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.header_item {
+    color: var(--text);
+    font-family: var(--font);
+    font-family: 18px;
+    transition: color .1s;
+}
+.header_item:hover {
+    color: var(--heading);
+}
+
+.registration_container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.signup_item {
+    font-family: var(--font);
+    color: var(--text);
+    font-weight: bold;
+}
+.signup_item:hover {
+    color: var(--heading);
+}
+#signup {
+    color: var(--green);
+}
+#signup:hover {
+    color: var(--shining-green);
+}
+
+.signupbtn {
+    height: 28px;
+    width: 109px;
+    border: none;
+    padding: 10px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: var(--green);
+    color: #fff;
+    transition: all 0.3s;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.signupbtn:hover {
+    outline: 1px solid var(--green);
+    outline-offset: 4px;
+}
+
+.signupbtn:active {
+    outline: 1px solid var(--green);
+    outline-offset: 1px;
+}
+
+.signupbtn p {
+    font-size: 16px;
+    font-family: var(--font);
+}
+
+.logged_in {
+    display: flex;
+    gap: 10px;
+    position: relative;
+}
+
+.header_user {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: all .1s;
+    border-radius: 5px;
+}
+.header_user:hover {
+    background-color: var(--border-color);
+}
+.header_user_pfp {
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+    min-height: 40px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    border: 1px solid var(--border-color);
+}
+.header_user_pfp:hover {
+    opacity: .8;
+}
+.header_user_name {
+    font-family: var(--MinecraftFont);
+    color: var(--heading);
+    font-size: 16px;
+}
+
+.back_to_social {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    gap: 5px;
+}
+.back_to_social p {
+    color: var(--heading);
+    font-family: var(--MinecraftFont);
+}
+.arrow {
+    width: 20px;
+}
+
+.burger_menu_btn_container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 30px;
+    cursor: pointer;
+    appearance: none;
+    background: none;
+    outline: none;
+    border: none;
+    display: none;
+    z-index: 2;
+}
+    
+.burger_menu_btn_container .burger_menu_btn ,
+.burger_menu_btn_container:after,
+.burger_menu_btn_container:before{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: rgb(255, 255, 255);
+    margin: 2px 0px;
+    transition: all .4s;
+    border-radius: 2px;
+}
+.burger_menu_btn_container.active:before{
+    transform: rotate(45deg) translateY(3px) translateX(6px);
+}
+.burger_menu_btn_container.active:after{
+    transform: rotate(-45deg) translateY(-3px) translateX(6px);
+}
+.burger_menu_btn_container.active .burger_menu_btn{
+    opacity: 0;
+}
+
+.burger_menu {
+    width: fit-content;
+    padding: 10px 20px;
+    height: 100vh;
+    position: fixed;
+    background-color: #000000b3;
+    display: none;
+    right: -568px;
+    transition: all .4s ease-in-out;
+    top: 0;
+}
+.burger_menu.active {
+    transform: translateX(-568px);
+}
+
+.header_drop_down_menu {
+    width: 250px;
+    height: auto;
+    padding: 5px;
+    background-color: #00000094;
+    border: 1px solid var(--border-color);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    position: absolute;
+    top: 45px;
+    right: 0px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 0px 2px 0px, rgba(0, 0, 0, 0.28) 0px 8px 16px 0px;
+    transition: all .1s;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+}
+.header_drop_down_menu.active {
+    display: flex;
+}
+.header_drop_down_menu.inactive {
+    display: none;
+}
+
+.header_user_container {
+    cursor: pointer;
+    color: #fff;
+    position: relative;
+}
+.header_user_arrow {
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+    right: 0px;
+    bottom: 5px;
+}
+.header_user_arrow {
+    background-color: #4f4f4f;
+    width: 12px;
+    height: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.log_out {
+    width: 100%;
+    color: var(--heading);
+    font-size: 14px;
+    font-family: var(--fontGeo);
+    padding: 5px 10px;
+    background-color:  #ff00001a;
+    border: 1px solid #ff0000;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .1s;
+}
+.log_out:hover {
+    background-color: #ff000025;
+}
+
+.header_search {
+    display: none;
+}
+
+@media only screen and (max-width: 900px) {
+    .header_heading {
+        font-size: 16px;
+    }
+    .header_logo {
+        width: 32px;
+    }
+    .registration_container {
+        display: none;
+    }
+    .logged_in {
+        flex-direction: column;
+        padding-top: 45px;
+        gap: 20px;
+    }
+    .burger_menu_list {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: start;
+    }
+    .header_user {
+        padding: 0;
+    }
+    .burger_menu_btn_container {
+        display: flex;
+    }
+    .burger_menu {
+        display: flex;
+    }
+    .log_out {
+        text-align: center;
+    }
+    .header_search {
+        width: 220px;
+        display: flex;
+    }
+    .social_input_search_icon {
+        width: 16px;
+    }
+    .header_input {
+        width: 100%;
+        font-size: 12px;
+    }
+    .header_input::placeholder {
+        color: var(--heading)
+    }
+    .social_search_users_list {
+        padding: 0;
+        gap: 0;
+    }
+    .burger_reg_container {
+        padding-top: 45px;
+    }
+    .user_not_found {
+        text-align: center;
+    }
+}

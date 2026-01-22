@@ -1,0 +1,277 @@
+.profile {
+    color: #fff;
+    width: 100%;
+    padding-top: 75px;
+    display: flex;
+    justify-content: center;
+}
+.profile_inner {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+    padding-top: 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.profile_container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+.profile_name_container {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.profile_text_container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.profile_pfp {
+    width: 128px;
+    height: 128px;
+    min-width: 128px;
+    min-height: 128px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+.profile_name {
+    font-size: 32px;
+    font-family: var(--MinecraftFont);
+    color: var(--heading);
+}
+.profile_bio {
+    font-size: 16px;
+    color: var(--text);
+    font-family: var(--fontGeo);
+    text-align: center;
+}
+
+.edit_profile_btn {
+    text-align: center;
+    padding: 10px 20px;
+    background-color: var(--green);
+    border-radius: 5px;
+    font-family: var(--MinecraftFont);
+    font-size: 16px;
+    cursor: pointer;
+    transition: all .2s;
+    background-image: url('../../assets/images/pack_3530346.jpg');
+    background-size: cover;
+    background-position: center;
+    text-shadow: 2px 2px 5px #000;
+}
+.edit_profile_btn:hover {
+    /* background-color: var(--shining-green); */
+    opacity: 0.8;
+    transform: translate(-1px, -1px);
+    box-shadow: 5px 5px 5px #00000093;
+}
+
+.edit_profile_container {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background-color: #0000001a;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    margin-top: -75px;
+    z-index: 9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.edit_profile_inner {
+    width: 100%;
+    max-width: 500px;
+    background-color: var(--post-bg-color);
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.edit_profile_tab {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.edit_profile_title {
+    font-size: 28px;
+    font-family: var(--fontGeo);
+    color: var(--heading);
+}
+.edit_profile_close_btn {
+    width: 14px;
+    cursor: pointer;
+    transition: all .1s;
+}
+.edit_profile_close_btn:hover {
+    scale: 1.2;
+}
+.edit_profile_close_btn:active {
+    scale: 1;
+}
+
+.edit_profile_input_container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.edit_input_inner_container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.edit_profile_input {
+    width: 50%;
+    background: transparent;
+    padding: 5px 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    color: var(--text);
+    transition: all .1s;
+    font-family: var(--fontGeo);
+    font-size: 16px;
+}
+.edit_profile_input:focus {
+    outline: none;
+    border: 1px solid var(--heading);
+}
+
+.edit_input_label {
+    font-family: var(--fontGeo);
+}
+
+.pfp_preview {
+    width: 128px;
+    height: 128px;
+    min-width: 128px;
+    min-height: 128px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+.pfp_update_btn {
+    font-family: var(--fontGeo);
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: var(--blue);
+    transition: all .1s;
+    cursor: pointer;
+    width: fit-content;
+    text-align: center;
+    padding-bottom: 2px;
+    color: var(--heading);
+}
+.pfp_update_btn:hover {
+    background-color: var(--shining-blue);
+}
+#pfpChange {
+    display: none;
+}
+#bio {
+    height: 100px;
+}
+
+.edit_profile_btn_container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.profile_update_btn {
+    background-color: var(--green);
+    width: 100%;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: all .1s;
+    cursor: pointer;
+    font-family: var(--fontGeo);
+    text-align: center;
+    color: var(--heading);
+    font-size: 16px;
+}
+.profile_update_btn:hover {
+    background-color: var(--shining-green);
+}
+
+.log_out_btn {
+    background-color: var(--error-red);
+    width: 100%;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: all .1s;
+    cursor: pointer;
+    font-family: var(--fontGeo);
+    text-align: center;
+    color: var(--heading);
+    font-size: 16px;
+}
+.log_out_btn:hover {
+    background-color: var(--error-red-shining);
+}
+
+.profile_posts_container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.profile_posts_title {
+    font-size: 22px;
+    font-family: var(--fontGeo);
+    color: var(--heading);
+}
+
+@media only screen and (max-width: 900px) {
+    .profile_inner {
+        padding: 0;
+    }
+    .profile_container {
+        padding-left: 10px;
+        padding-right: 10px;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .profile_name_container {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .profile_posts_container {
+        gap: 5px;
+    }
+    .profile_posts_title {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .edit_profile_inner {
+        height: 100%;
+        border-radius: 0px;
+    }
+    .edit_profile_input_container {
+        align-items: center;
+    }
+    .edit_profile_title {
+        font-size: 22px;
+    }
+    .edit_profile_input {
+        width: 100%;
+    }
+    .profile_text_container {
+        align-items: center;
+        gap: 5px;
+    }
+    .profile_name {
+        text-align: center;
+    }
+}

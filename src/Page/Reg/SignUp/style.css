@@ -1,0 +1,123 @@
+.SignUp {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../../../assets/images/regbg.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.SignUp_container {
+    width: auto;
+    height: auto;
+    background-color: var(--post-bg-color);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 40px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 0px 2px 0px, rgba(0, 0, 0, 0.28) 0px 8px 16px 0px;
+}
+.signup_heading {
+    color: var(--heading);
+    font-family: var(--MinecraftFont);
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.signup_logo {
+    width: 40px;
+}
+
+.signup_title_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.signup_title {
+    color: var(--heading);
+    font-size: 24px;
+    font-family: var(--fontGeo);
+    font-weight: bold;
+}
+.signup_email_label {
+    font-family: var(--fontGeo);
+    font-size: 14px;
+    color: var(--text);
+}
+
+.reg_form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.reg_btn {
+    width: 100%;
+    background-color: var(--green);
+    padding: 8px 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--fontGeo);
+    color: var(--heading);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all .2s;
+    font-weight: bold;
+}
+.reg_btn:hover {
+    background-color: var(--shining-green);
+}
+
+.signup_footer {
+    font-size: 16px;
+    color: var(--text);
+    text-align: center;
+    font-family: var(--fontGeo);
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.signup_footer span {
+    color: var(--green);
+    cursor: pointer;
+}
+.signup_footer span:hover {
+    text-decoration: underline;
+}
+
+.reg_input {
+    width: 100%;
+    background: transparent;
+    padding: 10px 16px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    color: var(--text);
+    transition: all .1s;
+    font-family: var(--fontGeo);
+}
+.reg_input:focus {
+    outline: none;
+    border: 1px solid var(--heading);
+}
+
+@media only screen and (max-width: 769px) {
+    .SignUp_container {
+        width: 100%;
+        height: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-radius: 0px;
+    }
+    .signup_title {
+        text-align: center;
+    }
+}

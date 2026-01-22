@@ -1,0 +1,48 @@
+@font-face {
+  font-family: MinecraftCaps;
+  src: url('./assets/fonts/MinecraftTen-VGORe.ttf');
+}
+
+@font-face {
+  font-family: MinecraftGeorgian;
+  src: url('./assets/fonts/mg-minecraft-georgian-regular.ttf');
+}
+
+@font-face {
+  font-family: Minecraft;
+  src: url('./assets/fonts/MinecraftRegular-Bmg3.otf');
+}
+
+@font-face {
+  font-family: NotoSans;
+  src: url('./assets/fonts/NotoSans-Regular.ttf');
+}
+
+@font-face {
+  font-family: FontGeo;
+  src: url('./assets/fonts/bpg_nino_mtavruli_normal.ttf');
+}
+
+:root {
+  --bg-color: #1f1f1f;
+  --heading: #F3F3EE;
+  --text : #fefef0c5;
+  --border-color: #f3f3ee3f;
+  --MinecraftCaps: MinecraftCaps;
+  --MinecraftGeo: MinecraftGeorgian;
+  --MinecraftFont: Minecraft;
+  --font: NotoSans;
+  --fontGeo: FontGeo;
+  --green: #75A403;
+  --shining-green: #7db300;
+  --error-red: #FF2C2C;
+  --error-red-shining: #ff6060;
+  --post-bg-color: rgb(41, 41, 41);
+  --blue: #115ea3;
+  --shining-blue: #0f6cbd;
+}
+
+::selection {
+  background-color: var(--green);
+  color: var(--heading);
+}

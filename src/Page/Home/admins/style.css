@@ -1,0 +1,78 @@
+.Admins {
+    width: 100%;
+    height: auto;
+}
+.Admins_container {
+    width: 100%;
+    max-width: 1260px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.Admins_heading {
+    font-size: 36px;
+    color: var(--heading);
+    font-family: var(--MinecraftGeo);
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.admins_container {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 50px;
+}
+.admin {
+    width: 100%;
+    height: 100%;
+    padding: 20px 0px;
+    border-radius: 10px;
+    border: 1px solid var(--border-color);
+    background-color: #00000000;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.admin_image {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    /* border: 2px solid var(--green); */
+    margin-bottom: 15px;
+    object-fit: cover;
+    object-position: center;
+    filter: drop-shadow(2px 2px 5px #000);
+}
+.admin_name {
+    font-size: 28px;
+    color: var(--heading);
+    font-family: var(--MinecraftFont);
+    transition: all .1s;
+}
+.admin_name:hover {
+    text-decoration: underline;
+}
+.admin_role {
+    font-size: 16px;
+    color: var(--text);
+    font-family: var(--font);
+}
+
+@media only screen and (max-width: 1026px) {
+    .admins_container {
+        gap: 20px;
+    }
+}
+
+@media only screen and (max-width: 769px) {
+    .Admins_heading {
+        font-size: 28px;
+    }
+}

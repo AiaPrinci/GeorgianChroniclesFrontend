@@ -1,0 +1,213 @@
+.Social_about {
+    width: 100%;
+    height: 100%;
+    color: var(--heading);
+    left: 0;
+    display: flex;
+    justify-content: right;
+}
+.Social_About_Inner {
+    width: fit-content;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: end;
+    max-width: 300px;
+}
+.Social_header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: end;
+}
+.Social_about_title {
+    font-size: 22px;
+    font-family: var(--MinecraftFont);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+    z-index: -1;
+}
+.social_title_logo {
+    width: 64px;
+}
+
+.social_input_container {
+    width: 100%;
+    position: relative;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    display: flex;
+    padding: 10px 15px;
+    gap: 10px;
+    align-items: center;
+}
+.user_search_input {
+    width: 100%;
+    background: transparent;
+    border: none;
+    color: var(--text);
+    transition: all .1s;
+    font-family: var(--MinecraftGeo);
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    padding: 0px 5px;
+}
+.user_search_input:focus {
+    outline: none;
+}
+.social_input_search_icon {
+    width: 24px;
+}
+.social_search_users_list {
+    position: absolute;
+    border: 1px solid var(--border-color);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-radius: 5px;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    padding: 15px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.social_search_users_list.inactive {
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-5px);
+}
+
+.social_search_users_list.active {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+}
+
+.user_item {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: all .1s ease-in-out;
+}
+.user_item:hover {
+    background-color: var(--border-color);
+}
+.search_user_pfp {
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+    min-height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    filter: drop-shadow(2px 2px 2px #00000069);
+}
+.search_user_name {
+    font-family: var(--MinecraftGeo);
+    color: var(--heading);
+}
+
+.user_not_found {
+    font-family: var(--MinecraftGeo);
+    color: var(--heading);
+}
+
+.social_about_container {
+    width: 100%;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.social_about {
+    width: 100%;
+    font-size: 16px;
+    font-family: var(--fontGeo);
+    color: var(--text);
+}
+.social_about_img {
+    width: 100%;
+    height: 168px;
+    border-radius: 5px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.social_about_admins {
+    width: 100%;
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+}
+.social_about_admin_inner {
+    display: flex;
+    gap: 15px;
+}
+.social_about_admin_title {
+    font-size: 18px;
+    font-family: var(--fontGeo);
+}
+
+.admin_item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.social_about_admin_pfp {
+    width: 36px;
+    height: 36px;
+    min-width: 36px;
+    min-height: 36px;
+    border-radius: 8px;
+    object-fit: cover;
+    object-position: center;
+}
+.social_about_admin_name {
+    font-size: 18px;
+    font-family: var(--MinecraftFont);
+    color: var(--heading);
+}
+.social_about_admin_name:hover {
+    text-decoration: underline;
+}
+
+.Social_about_footer {
+    position: fixed;
+    bottom: 0;
+    padding-bottom: 10px;
+}
+
+.social_footer_text {
+    font-family: var(--MinecraftFont);
+}
+.social_footer_text a {
+    color: var(--blue);
+}
+.social_footer_text a:hover {
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 1261px) {
+    .Social_about {
+        width: 450px;
+        display: flex;
+        justify-content: left;
+        padding-left: 20px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .Social_about {
+        display: none;
+    }
+}

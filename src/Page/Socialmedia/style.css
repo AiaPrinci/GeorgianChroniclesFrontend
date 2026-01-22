@@ -1,0 +1,22 @@
+.Social {
+    width: 100%;
+    max-width: 1260px;
+    margin: 0 auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    padding-top: 75px;
+    position: relative;
+}
+
+@media only screen and (max-width: 1261px) {
+    .Social {
+        gap: 20px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .Social {
+        gap: 0;
+    }
+}

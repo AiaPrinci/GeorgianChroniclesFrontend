@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-color);
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+}
+
+textarea {
+  resize: none;
+}
+
+.btn {
+  color: var(--heading);
+  font-family: var(--font);
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all .1s;
+}
+.btn:hover {
+  opacity: 0.8;
+}
+
+.Alert {
+  position: fixed;
+  top: -80px;
+  padding: 15px 30px;
+  color: var(--heading);
+  font-family: var(--fontGeo);
+  background-color: #00000019;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: 10px;
+  font-size: 20px;
+  transition: top .2s ease;
+  z-index: 9999;
+}
+
+.Alert.show {
+  top: 20px;
+}
+
+.Alert.success {
+  border-bottom: 1px solid var(--shining-green);
+}
+
+.Alert.error {
+  border-bottom: 1px solid var(--error-red);
+}
+
+.global_loader {
+  position: fixed;
+  inset: 0;
+  background: #0e0e0e;
+  z-index: 9999;
+  display: grid;
+  place-items: center;
+  color: white;
+}
+
+.spinner {
+  width: 48px;
+  height: 48px;
+  border: 4px solid #00000000;
+  border-top: 4px solid #00000000;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+@media only screen and (max-width: 900px) {
+  .Alert {
+    font-size: 16px;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
